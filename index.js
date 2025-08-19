@@ -39,10 +39,10 @@ function main() {
 
 main(1,2,3)
 
-*/
+
 
 const main = (...args) => { // ... 나머지 매개변수구문, args 말고 아무거나 써도됨
     console.log(args)
 }
 main(1,2,3)
-
+*/
