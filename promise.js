@@ -31,7 +31,7 @@ promise.then((data)=> {
     console.log("완료!");
     console.log(data);
 })
-*/
+
 // 간결식
 // then(), catch(), finally()
 getData().then((data) => {
@@ -43,3 +43,24 @@ getData().then((data) => {
     // 비동기 작업이 성공하던 실패하던 실행
     console.log("마무리 작업");
 })
+*/
+
+//Promise chaining
+const promise = getData();
+promise
+    .then((data) => getData())
+    .then((data) => getData())
+    .then((data) => console.log(data))
+
+ //   promise
+ //   .then((data) => {
+ //       console.log(data);
+ //       return getData();
+ //   })
+ //   .then((data) => {
+ //       console.log(data);
+ //       return getData();
+ //   })
+ //   .then((data) => {
+ //       console.log(data);
+ //   })
